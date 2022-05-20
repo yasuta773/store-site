@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*共通ここから*/
+html{
+    font-size: 62.5%;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+h1{
+    width: 120px;
+    height: 40px;
+    background-color: #2A2A2A;
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+    color: #24292E;
+    font-size: 1.2rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.common-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.common-title h2{
+    margin-bottom: 20px;
+}
+
+.readmore{
+    width: 132px;
+    height: 42px;
+    padding: 13px 32px 13px 32px;
+    margin: 0 auto;
+    border: 1px solid #2A2A2A;
+}
+/*共通ここまで*/
+
+/*mainvisual-wrapperここから*/
+.mainvisual-wrapper{
+    position: relative;
+}
+
+.mainvisual-wrapper img{
+    height: 600px;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.mainvisual-wrapper h1{
+    position: absolute;
+    z-index: 20;
+    top: 30px;
+    right: 30px;
+}
+/*mainvisual-wrapperここまで*/
+
+/*menu-wrapperここから*/
+.menu-wrapper .flex-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.magazine-menu{
+    margin-right: 21px;
+    position: relative;
+}
+
+.menu-contents{
+    position: absolute;
+    top: calc(50% - 46.5px);
+    left: calc(50% - 145px);
+    text-align: center;
+    width: 290px;
+    height: 93px;
+    background-color: #707070;
+    background: rgba(112, 112, 112, 0.5);
+    color: #fff;
+    padding: 15px 34px 15px 34px;
+}
+
+.menu-contents h3{
+    font-size: 2rem;
+}
+
+.menu-contents p{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+/*menu-wrapperここまで*/
+
+/*fashion-wrapperここから*/
+.fashion-wrapper {
+    background-position: center;
+    background-image: url(/images/fashion.png);
+    height: 520px;
+    margin-bottom: 80px;
+} 
+
+.fashion-wrapper .common-title{
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+/*fashion-wrapperここまで*/
+
+/*catalog-wrapperここから*/
+.catalog-wrapper{
+    background-color: #F5F5F5;
+}
+
+.catalog-wrapper .container{
+    padding: 52px 85px 60px 80px;
+    padding-bottom: 60px;
+}
+
+.catalog-wrapper .flex-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-contents,
+.antique-contents{
+    width: calc(620 / 1200 * 100%);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.catalog-contents,
+.antique-images{
+    margin-left: 40px;
+}
+
+.catalog-wrapper .title{
+    margin-bottom: 40px;
+}
+
+.catalog-text p:first-of-type,
+.antique-text p:first-of-type{
+    margin-bottom: 30px;
+}
+
+.catalog-text p:last-of-type{
+    margin-top: 30px;
+}
+
+.catalog-wrapper .readmore{
+    margin-top: 60px;
+}
+/*catalog-wrapperここまで*/
+
+/*footerここから*/
+/*footerここまで*/
+
+/**/
+/**/
