@@ -16,11 +16,16 @@ h1{
     font-size: 2.4rem;
     color: #fff;
     text-align: center;
-    line-height: 40px;
+    line-height: 38px;
 }
 
 h2{
     font-size: 2.4rem;
+    letter-spacing: -0.05em;
+}
+
+h4{
+    font-size: 1.6rem;
 }
 
 p{
@@ -37,7 +42,7 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     width: calc(100% - 80px);
-    padding-top: 80px;
+    padding-top: 76px;
     padding-bottom: 80px;
 }
 
@@ -47,7 +52,7 @@ a{
 }
 
 .common-title h2{
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .readmore{
@@ -85,21 +90,22 @@ a{
 }
 
 .magazine-menu{
-    margin-right: 21px;
+    margin-left: 11px;
+    margin-right: 7px;
     position: relative;
 }
 
 .menu-contents{
     position: absolute;
-    top: calc(50% - 46.5px);
-    left: calc(50% - 145px);
+    top: calc(50% - 44.5px);
+    left: calc(50% - 148px);
     text-align: center;
     width: 290px;
     height: 93px;
     background-color: #707070;
     background: rgba(112, 112, 112, 0.5);
     color: #fff;
-    padding: 15px 34px 15px 34px;
+    padding: 11px 27px 11px 27px;
 }
 
 .menu-contents h3{
@@ -117,12 +123,12 @@ a{
     background-position: center;
     background-image: url(/images/fashion.png);
     height: 520px;
-    margin-bottom: 80px;
+    margin-bottom: 89px;
 } 
 
 .fashion-wrapper .common-title{
-    padding-top: 60px;
-    margin-bottom: 30px;
+    padding-top: 57px;
+    margin-bottom: 29px;
 }
 /*fashion-wrapperここまで*/
 
@@ -136,26 +142,34 @@ a{
     padding-bottom: 60px;
 }
 
-.catalog-wrapper .flex-wrapper{
+.catalog-wrapper .flex-wrapper1,
+.catalog-wrapper .flex-wrapper2{
     display: flex;
     justify-content: center;
+}
+
+.flex-wrapper1{
+    margin-bottom: 120px;
 }
 
 .catalog-contents,
 .antique-contents{
     width: calc(620 / 1200 * 100%);
-    padding-top: 90px;
+    padding-top: 87px;
     padding-bottom: 90px;
     text-align: center;
 }
 
-.catalog-contents,
-.antique-images{
-    margin-left: 40px;
+.catalog-contents{
+    padding-left: 38px;
+}
+
+.antique-contents{
+    padding-right: 30px;
 }
 
 .catalog-wrapper .title{
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .catalog-text p:first-of-type,
@@ -172,8 +186,47 @@ a{
 }
 /*catalog-wrapperここまで*/
 
-/*footerここから*/
-/*footerここまで*/
+/*mag88-wrapperここから*/
+.mag88-wrapper{
+    background-color: #333333;
+}
 
-/**/
-/**/
+.mag88-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 92px 108px 95px 70px;
+    padding-bottom: 95px;
+}
+
+.title-1{
+    color: #fff;
+}
+
+.title-1 ul{
+    list-style-position: inside;
+    font-size: 1.2rem;
+    line-height: calc(24 / 12);
+}
+
+.title-2{
+    width: 308px;
+    color: #fff;
+}
+
+.title-2 p{
+    font-size: 1.2rem;
+    line-height: calc(24 / 12);
+}
+/*mag88-wrapperここまで*/
+
+/*footerここから*/
+footer{
+    text-align: center;
+    padding: 30px 0;    
+}
+
+footer p{
+    font-size: 1.2rem;
+}
+/*footerここまで*/
