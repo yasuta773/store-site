@@ -22,6 +22,7 @@ h1{
 h2{
     font-size: 2.4rem;
     letter-spacing: -0.05em;
+    line-height: calc(28 / 24);
 }
 
 h4{
@@ -30,10 +31,10 @@ h4{
 
 p{
     font-size: 1.4rem;
+    line-height: calc(22 / 14);
 }
 
-a{
-    text-decoration: none;
+.readmore{
     color: #24292E;
     font-size: 1.2rem;
 }
@@ -42,7 +43,7 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     width: calc(100% - 80px);
-    padding-top: 76px;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -52,7 +53,7 @@ a{
 }
 
 .common-title h2{
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .readmore{
@@ -61,6 +62,21 @@ a{
     padding: 13px 32px 13px 32px;
     margin: 0 auto;
     border: 1px solid #2A2A2A;
+}
+
+@media screen and (max-width: 750px){
+    p{
+        line-height: calc(24 / 14);
+    }
+
+    .container{
+        width: initial;
+        padding: 80px 19px 80px 19px;
+    }
+
+    .common-title{
+        margin-bottom: 36px;
+    }
 }
 /*共通ここまで*/
 
@@ -73,6 +89,7 @@ a{
     height: 600px;
     object-fit: cover;
     z-index: 10;
+    width: 100%;
 }
 
 .mainvisual-wrapper h1{
@@ -89,7 +106,8 @@ a{
     justify-content: center;
 }
 
-.magazine-menu{
+.magazine-menu1,
+.magazine-menu2{
     margin-left: 11px;
     margin-right: 7px;
     position: relative;
@@ -97,8 +115,8 @@ a{
 
 .menu-contents{
     position: absolute;
-    top: calc(50% - 44.5px);
-    left: calc(50% - 148px);
+    top: calc(50% - 46px);
+    left: calc(50% - 147px);
     text-align: center;
     width: 290px;
     height: 93px;
@@ -110,11 +128,27 @@ a{
 
 .menu-contents h3{
     font-size: 2rem;
+    line-height: calc(23 / 20);
 }
 
 .menu-contents p{
     font-size: 1.4rem;
     font-weight: normal;
+}
+
+@media screen and (max-width: 750px){
+    .menu-wrapper .flex-wrapper{
+        display: block;
+    }
+
+    .magazine-menu1,
+    .magazine-menu2{
+        margin: initial;
+        text-align: center;
+    }
+    .magazine-menu1{
+        margin-bottom: 30px;
+    }
 }
 /*menu-wrapperここまで*/
 
@@ -123,12 +157,23 @@ a{
     background-position: center;
     background-image: url(/images/fashion.png);
     height: 520px;
-    margin-bottom: 89px;
+    margin-bottom: 84px;
 } 
 
 .fashion-wrapper .common-title{
     padding-top: 57px;
     margin-bottom: 29px;
+}
+
+@media screen and (max-width: 750px){
+    .fashion-wrapper{
+        margin-bottom: 50px;
+    }
+
+    .fashion-wrapper .common-title{
+        padding: 36px 22px 0 22px;
+        margin-bottom: 26px;
+    }
 }
 /*fashion-wrapperここまで*/
 
@@ -139,7 +184,7 @@ a{
 
 .catalog-wrapper .container{
     padding: 52px 85px 60px 80px;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
 }
 
 .catalog-wrapper .flex-wrapper1,
@@ -155,21 +200,22 @@ a{
 .catalog-contents,
 .antique-contents{
     width: calc(620 / 1200 * 100%);
-    padding-top: 87px;
     padding-bottom: 90px;
     text-align: center;
 }
 
 .catalog-contents{
     padding-left: 38px;
+    padding-top: 91px;
 }
 
 .antique-contents{
     padding-right: 30px;
+    padding-top: 83px;
 }
 
 .catalog-wrapper .title{
-    margin-bottom: 32px;
+    margin-bottom: 34px;
 }
 
 .catalog-text p:first-of-type,
@@ -184,9 +230,68 @@ a{
 .catalog-wrapper .readmore{
     margin-top: 60px;
 }
+
+@media screen and (max-width: 750px){
+    .catalog-wrapper .container{
+        padding: 30px 19px;
+    }
+
+    .catalog-wrapper .flex-wrapper1,
+    .catalog-wrapper .flex-wrapper2{
+        display: block;
+    }
+
+    .flex-wrapper1{
+        margin-bottom: 60px;
+    }
+
+    .catalog-images,
+    .antique-images{
+        text-align: center;
+    }
+
+    .catalog-contents,
+    .antique-contents{
+        width: initial;
+        text-align: initial;
+        padding-bottom: initial;
+    }
+
+    .catalog-contents{
+        padding-left: initial;
+        padding-top: 60px;
+    }
+
+    .antique-contents{
+        padding-bottom: 60px;
+    }
+
+    .catalog-contents .title,
+    .antique-contents .title{
+        text-align: center;
+    }
+
+    .catalog-text p:first-of-type,
+    .antique-text p:first-of-type{
+        margin-bottom: 26px;
+    }
+
+    .catalog-text p:last-of-type{
+        margin-top: 23px;
+    }
+
+    .antique-contents{
+        padding-right: initial;
+        padding-top: initial;
+    }
+
+    .catalog-wrapper .readmore{
+        margin-top: 56px;
+    }
+}
 /*catalog-wrapperここまで*/
 
-/*mag88-wrapperここから*/
+/*footerここから*/
 .mag88-wrapper{
     background-color: #333333;
 }
@@ -195,8 +300,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 92px 108px 95px 70px;
-    padding-bottom: 95px;
+    padding: 96px 108px 95px 70px;
 }
 
 .title-1{
@@ -218,15 +322,33 @@ a{
     font-size: 1.2rem;
     line-height: calc(24 / 12);
 }
-/*mag88-wrapperここまで*/
 
-/*footerここから*/
-footer{
+.footer-end{
     text-align: center;
-    padding: 30px 0;    
+    padding: 28px 0;    
 }
 
-footer p{
+.footer-end p{
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 750px){
+    .mag88-wrapper .container{
+        display: block;
+        padding: 30px 22px 54px 19px;
+    }
+
+    .footer-h1{
+        width: 120px;
+        margin: 0 auto 26px auto;
+    }
+
+    .title-1{
+        margin-bottom: 22px;
+    }
+
+    .title-2{
+        width: initial;
+    }
 }
 /*footerここまで*/
