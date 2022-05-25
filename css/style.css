@@ -98,6 +98,20 @@ p{
     top: 30px;
     right: 30px;
 }
+
+.mainvisual-sp{
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    .mainvisual-pc{
+        display: none;
+    }
+    
+    .mainvisual-sp{
+        display: block;
+    }
+}
 /*mainvisual-wrapperここまで*/
 
 /*menu-wrapperここから*/
