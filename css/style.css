@@ -311,14 +311,21 @@ p{
 }
 
 .mag88-wrapper .container{
+    max-width: 1036px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 96px 108px 95px 70px;
+    padding: 96px 0 95px 0;
+}
+
+.footer-h1{
+    padding-right: 28px;
 }
 
 .title-1{
     color: #fff;
+    padding-right: 28px;
 }
 
 .title-1 ul{
@@ -330,6 +337,7 @@ p{
 .title-2{
     width: 308px;
     color: #fff;
+    padding-right: 28px;
 }
 
 .title-2 p{
