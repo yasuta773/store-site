@@ -169,7 +169,7 @@ p{
 /*fashion-wrapperここから*/
 .fashion-wrapper {
     background-position: center;
-    background-image: url(/images/fashion.png);
+    background-image: url(images/fashion.png);
     height: 520px;
     margin-bottom: 84px;
 } 
